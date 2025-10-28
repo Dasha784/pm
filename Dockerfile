@@ -1,5 +1,6 @@
 # Используем современный Python 3.13 slim
-FROM python:3.13-slim
+FROM python:3.12-slim
+
 
 # Настройки окружения
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -26,4 +27,4 @@ ENV TZ=Europe/Kyiv \
     BOT_TOKEN=""
 
 # Запуск бота
-CMD ["python", "предолжка.py"]
+CMD ["python3", "предолжка.py"]
